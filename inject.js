@@ -24,7 +24,7 @@ function inject() {
     if (typeof skuSpan !== "undefined") {
         //Add USD
         let priceDiv = document.getElementsByClassName("price")[0]
-        if (!document.getElementById('USDSpan')) {
+        if (!document.getElementById('USDSpan') && typeof priceDiv !== "undefined") {
             let span = document.createElement('span');
             span.id = "USDSpan"
             span.innerHTML = " USD"
